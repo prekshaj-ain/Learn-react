@@ -29,3 +29,14 @@ return(
 
 #### - wrapper compnent - it wont be rendered on dom but still does the job
 #### - fragments - react provides us the build in wrapper component.
+
+### protals 
+#### - provides a way to render children into a DOM node that exists outside the heirarchy of the parent components
+
+### refs
+#### - used to store the refernce of an element (not a value : for value we use useState hook).
+#### - useState is responsible for re-rendering that particular dom element whereas in useRef the dom element will never be re-rendered.
+#### - useRef returns object who has single property .current which is initialized to the argument
+```
+const refContainer = useRef(initialValue);
+```
